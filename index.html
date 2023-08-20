@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="theme-color" content="#483eff">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="./css/bootstrap-icons.css"> -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap"
+    rel="stylesheet">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="window">
+    <div class="form position-relative p-md-3  pb-md-5 d-md-flex">
+      <div class="side-nav col-12 col-md-4">
+        <ul>
+          <li class="row align-items-center">
+            <span class="number col active">1</span>
+            <div class="col d-none d-md-block">
+              <span class="text-white-50 fs-6">step 1</span>
+              <p class="p-0 m-0 text-uppercase">Your Info</p>
+            </div>
+          </li>
+          <li class="row align-items-center">
+            <span class="number col">2</span>
+            <div class="col d-none d-md-block">
+              <span class="text-white-50 fs-6">step 2</span>
+              <p class="p-0 m-0 text-uppercase">select plan</p>
+            </div>
+          </li>
+          <li class="row align-items-center">
+            <span class="number col">3</span>
+            <div class="col d-none d-md-block">
+              <span class="text-white-50 fs-6">step 3</span>
+              <p class="p-0 m-0 text-uppercase">add-ons</p>
+            </div>
+          </li>
+          <li class="row align-items-center">
+            <span class="number col">4</span>
+            <div class="col d-none d-md-block">
+              <span class="text-white-50 fs-6">step 4</span>
+              <p class="p-0 m-0 text-uppercase">summary</p>
+            </div>
+          </li>
+        </ul>
+      </div>  
+      <div class="doc doc-1 col-12 col-md-8 active">
+        <h2>Personal info</h2>
+        <p>please provide your name, email address, phone number</p>
+        <form action="">
+          <label for="name">Name</label>
+          <input type="text" name="name" placeholder="E.G june duo">
+          <label for="mail">Email address</label>
+          <input type="email" name="mail" placeholder="juneduo@gmail.com">
+          <label for="phone">Phone number</label>
+          <input type="tel" name="phone" placeholder="+9647752213735" required>
+        </form>
+      </div>    
+        <div class="doc doc-2 col-12 col-md-8 ">
+          <h2>Select your plan</h2>
+          <p>you have the option for monthly or yearly billing</p>
+          <div class="bill-options row gap-2">
+            <div class="option col d-flex flex-column align-items-center active">
+              <div class="icon"><img src="./assets/images/icon-arcade.svg" alt=""></div>
+              <p>arcade</p>
+              <p>90$/yr</p>
+              <p>2 month free</p>
+            </div>
+            <div class="option col d-flex flex-column align-items-center">
+              <div class="icon"><img src="./assets/images/icon-advanced.svg" alt=""></div>
+              <p>advanced</p>
+              <p>120$/yr</p>
+              <p>2 month free</p>
+            </div>
+            <div class="option col d-flex flex-column align-items-center">
+              <div class="icon"><img src="./assets/images//icon-pro.svg" alt=""></div>
+              <p>pro</p>
+              <p>150$/yr</p>
+              <p>2 month free</p>
+            </div>
+          </div>
+          <div class="m-y-btn">monthly <span class="my-switch"><span></span></span>yearly</div>
+        </div>
+        <div class="doc doc-3 col-12 col-md-8 ">
+          <h2>Pick add-ones</h2>
+          <p>add-ones help enhance your gaming experience</p>
+          <div class="add-one row gap-2">
+            <div class="add-option col-12 d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="icon me-4 m-0 active"></div>
+                <div>
+                  <p class="m-0">online server</p>
+                  <p class="m-0">access to multiplayer games</p>
+                </div>
+              </div>
+              <p>+10 $ / ye</p>
+            </div>
+            <div class="add-option col-12 d-flex align-items-center justify-content-between ">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="icon me-4 m-0"></div>
+                <div>
+                  <p class="m-0">larger storage</p>
+                  <p class="m-0">Extra 1TB of cloud save</p>
+                </div>
+              </div>
+              <p>+20 $ / ye</p>
+            </div>
+            <div class="add-option col-12 d-flex align-items-center justify-content-between ">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="icon me-4 m-0 "></div>
+                <div>
+                  <p class="m-0">costomizable profile</p>
+                  <p class="m-0">costom theme on your profile</p>
+                </div>
+              </div>
+              <p>+20 $ / ye</p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="doc doc-4 col-12 col-md-8 ">
+          <h2>Finishing up</h2>
+          <p>Double-check everything looks OK before confirming</p>
+          <div class="d-flex justify-content-between align-items-center bg-light p-1 pb-2 border-bottom">
+            <div>
+              <p class="d-flex m-0 text-dark finish-plan">Arcade </p>
+              <p class="m-0 text-primary text-decoration-underline change-plan">change</p>
+            </div>
+            <p class="m-0 finish-plan-price">9$ / mo</p>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mt-3 p-1 total-finish">
+            <p class="m-0 text-dark fw-bold">total by month</p>
+            <p class="fw-bold text-primary m-0 total-finish-price">+12$ / mo</p>
+          </div>
+        </div>
+
+        <div class="doc doc-5 col-12 col-md-8 text-center">
+          <div class="image mb-3"><img src="./assets/images/icon-thank-you.svg" alt=""></div>
+          <p class="fs-2 thank-you">Thank you</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ratione iure repudiandae deleniti enim neque rem sed libero deserunt ipsam?</p>
+        </div>
+        <button class="btn btn-primary btn-next">Next Step</button>
+        <button class="btn btn-light text-secondary btn-back"><i class="fa-solid fa-arrow-left"></i> Go Back</button>
+    </div>
+    <div class="attr">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/hatem-m">hatem mansour</a>.
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>
